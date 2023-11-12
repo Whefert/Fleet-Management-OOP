@@ -4,6 +4,8 @@
 
 Demonstrate understanding of OOP by implementing Flee Management application using key OOP features such as: Encapsulation, Inheritance and Polymorphism.
 
+See screenshot from application here ![Fleet Management OOP](https://github.com/Whefert/Fleet-Management-OOP/blob/main/Final%20Project%20Screenshot.png)
+
 ## Acceptance Criteria
 
 * Create a console application in C# by using classes and the principles of OOP to develop simple Vehicle Fleet Management system.
