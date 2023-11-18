@@ -38,6 +38,8 @@ namespace FleetManagementApp
                 }
             }
 
+
+
         }
 
         static Vehicle createVehicle(string vehicleType)
@@ -137,80 +139,6 @@ namespace FleetManagementApp
                         "e.g. Type a, b, or c\n");
                 }
             }
-        }
-    }
-
-    class Vehicle
-    {
-        //Vehicle default constructor
-        public Vehicle() { }
-
-        //Vehicle overloaded constructor
-        public Vehicle(string make, string model,
-            ushort year, string colour, string fuelType, 
-            DateTime insuranceExpiryDate, DateTime fitnessExpiryDate) {
-         Make = make;
-         Model = model;
-         Year = year;
-         Colour = colour;
-         FuelType = fuelType;
-         InsuranceExpiryDate = insuranceExpiryDate;
-         FitnessExpiryDate = fitnessExpiryDate; 
-        }
-
-        public string? Make { get; set; }
-        public string? Model { get; set; }
-        public ushort? Year { get; set; }
-        public string? Colour { get; set; }
-        public string? FuelType { get; set; }
-        public DateTime? InsuranceExpiryDate { get; set; }
-        public DateTime? FitnessExpiryDate { get; set; }
-        public string? Type { get; set; }
-    }
-
-    class Car : Vehicle {
-        public Car() : base() {
-            this.Type = "Car";
-        }
-
-        public Car (string make, string model,
-            ushort year, string colour, string fuelType,
-            DateTime insuranceExpiryDate, DateTime fitnessExpiryDate) :
-            base(make, model, year, colour, fuelType, insuranceExpiryDate, fitnessExpiryDate)
-        {
-            this.Type = "Car";
-        }
-    }
-
-    class  Van : Vehicle
-    {
-        public  Van() : base()
-        {
-            this.Type = "Van";
-        }
-
-        public Van(string make, string model,
-            ushort year, string colour, string fuelType,
-            DateTime insuranceExpiryDate, DateTime fitnessExpiryDate) :
-            base(make, model, year, colour, fuelType, insuranceExpiryDate, fitnessExpiryDate)
-        {
-            this.Type = "Van";
-        }
-    }
-
-    class SUV : Vehicle
-    {
-        public SUV() : base()
-        {
-            this.Type = "SUV";
-        }
-
-        public SUV(string make, string model,
-            ushort year, string colour, string fuelType,
-            DateTime insuranceExpiryDate, DateTime fitnessExpiryDate) :
-            base(make, model, year, colour, fuelType, insuranceExpiryDate, fitnessExpiryDate)
-        {
-            this.Type = "SUV";
         }
     }
 }
